@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "Set of simple React UI components.",
   "scripts": {
-    "build": "webpack"
+    "start": "start-storybook -p 6006",
+    "build": "webpack",
+    "predeploy": "build-storybook",
+    "deploy": "firebase deploy"
   },
   "repository": {
     "type": "git",
@@ -24,8 +27,17 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
+    "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-interactions": "^6.4.22",
+    "@storybook/addon-links": "^6.4.22",
+    "@storybook/addons": "^6.4.22",
+    "@storybook/react": "^6.4.22",
+    "@storybook/testing-library": "0.0.11",
+    "@storybook/theming": "^6.4.22",
     "@types/react": "^18.0.6",
     "babel-loader": "^8.2.5",
+    "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2"
   }

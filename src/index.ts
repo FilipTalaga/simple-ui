@@ -7,7 +7,7 @@ type Numeric = {
 };
 
 const log = () => {
-  const array = [1, 2, 3];
+  const array: Numeric[] = [{ value: 1 }, { value: 2 }, { value: 3 }];
   const spread = [...array];
 
   console.log(spread);
