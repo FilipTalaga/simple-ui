@@ -2,9 +2,8 @@
   "name": "simple-ui",
   "version": "0.0.1",
   "description": "Set of simple React UI components.",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -15,5 +14,19 @@
   "bugs": {
     "url": "https://github.com/FilipTalaga/simple-ui/issues"
   },
-  "homepage": "https://github.com/FilipTalaga/simple-ui#readme"
+  "homepage": "https://github.com/FilipTalaga/simple-ui#readme",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/react": "^18.0.6",
+    "babel-loader": "^8.2.5",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
 }
