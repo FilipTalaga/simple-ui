@@ -1,3 +1,4 @@
 import React, { FC } from 'react';
+import { StyledButton } from './Button.styled';
 
-export const Button: FC = props => <button {...props} />;
+export const Button: FC = props => <StyledButton {...props} />;

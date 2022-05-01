@@ -26,6 +26,7 @@
 
     /* Type Checking */
     "strict": true /* Enable all strict type-checking options. */,
+    "checkJs": true,
     "noImplicitAny": true /* Enable error reporting for expressions and declarations with an implied `any` type.. */,
     "strictFunctionTypes": true /* When assigning functions, check to ensure parameters and the return values are subtype-compatible. */,
     "noImplicitThis": true /* Enable error reporting when `this` is given the type `any`. */,
