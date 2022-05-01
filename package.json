@@ -1,16 +1,19 @@
 {
-  "name": "simple-ui",
-  "version": "0.0.1",
+  "name": "@rementh/simple-ui",
+  "version": "0.0.4",
   "description": "Set of simple React UI components.",
-  "main": "index.ts",
+  "main": "./dist/lib.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "prepare": "husky install",
     "start": "start-storybook -p 6006",
-    "lint": "tsc && eslint . --ignore-path .gitignore --ext .js,.jsx,.ts,.tsx",
+    "deploy": "build-storybook && firebase deploy",
     "format": "pretty-quick --staged",
+    "lint": "tsc && eslint . --ignore-path .gitignore --ext .js,.jsx,.ts,.tsx",
     "build": "npm run lint && webpack",
-    "predeploy": "build-storybook",
-    "deploy": "firebase deploy",
-    "prepare": "husky install"
+    "release": "npm run build && npm publish --access public"
   },
   "repository": {
     "type": "git",
