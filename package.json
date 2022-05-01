@@ -7,7 +7,7 @@
     "start": "start-storybook -p 6006",
     "lint": "tsc && eslint . --ignore-path .gitignore --ext .js,.jsx,.ts,.tsx",
     "format": "pretty-quick --staged",
-    "build": "webpack",
+    "build": "npm run lint && webpack",
     "predeploy": "build-storybook",
     "deploy": "firebase deploy",
     "prepare": "husky install"
