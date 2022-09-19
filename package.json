@@ -1,8 +1,9 @@
 {
   "name": "@rementh/simple-ui",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Set of simple React UI components.",
   "main": "./dist/lib.js",
+  "types": "./dist/lib.d.ts",
   "files": [
     "dist"
   ],

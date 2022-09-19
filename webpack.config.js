@@ -3,10 +3,15 @@
 const path = require('path');
 
 module.exports = {
+  target: 'web',
   entry: './src/index.ts',
   output: {
     filename: 'lib.js',
     path: path.resolve(__dirname, 'dist'),
+    library: 'SimpleUi',
+    libraryTarget: 'umd',
+    globalObject: 'this',
+    umdNamedDefine: true,
   },
   mode: 'production',
   module: {
